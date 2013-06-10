@@ -6,6 +6,13 @@
 PloneGovBr-VirtualBox documentation!
 ====================================
 
+OS: Ubuntu 12.04 - 32 bit
+
+RAM: 1G
+
+HDD: 8G
+
+
 Table of Contents
 =================
 
@@ -15,6 +22,8 @@ Table of Contents
     :maxdepth: 2
 
     changelog/index
+    ssh/index
+    plone/index
 
 Indices and tables
 ==================
