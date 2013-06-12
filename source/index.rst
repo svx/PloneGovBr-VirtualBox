@@ -22,8 +22,12 @@ Table of Contents
     :maxdepth: 2
 
     changelog/index
+    setup/index
     ssh/index
     plone/index
+    usage_virtualbox/index
+    deploy/index
+    todo/index
 
 Indices and tables
 ==================

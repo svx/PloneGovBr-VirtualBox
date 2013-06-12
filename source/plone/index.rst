@@ -20,8 +20,33 @@ It is always handy to install also::
 
     subversion git
 
-For this Image we used the `install.plone.dependencies`_ script.
+For this Image we used the `install.plone.dependencies`_ script to install all
+needed dependencies.
 
 .. _install.plone.dependencies: https://github.com/collective/install.plone.dependencies
 
+Install
+-------
 
+Make sure to be in */home/zopeuser* !
+
+Checkout buildout from Github::
+
+    git clone git@github.com:plonegovbr/portal.buildout.git PloneGovBr
+
+Create virtualenv, to use its own Python::
+
+    virtualenv --python=python2.7 --no-site-packages PloneGovBr
+
+Create buildout.cfg::
+
+    [buildout]
+    extends = staging.cfg
+
+Bootstrap::
+
+    python bootstrap.py
+
+Run buildout::
+
+    ./bin/buildout -vvvv
