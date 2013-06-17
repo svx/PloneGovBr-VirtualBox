@@ -6,6 +6,13 @@ Overview about latest changes
 
 .. contents:: :local:
 
+Changelog-16-06-2013
+---------------------
+
+- switch to ubuntu-minimal
+
+
+
 Changelog-09-06-2013
 --------------------
 

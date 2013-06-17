@@ -6,11 +6,11 @@
 PloneGovBr-VirtualBox documentation!
 ====================================
 
-OS: Ubuntu 12.04 - 32 bit
+OS: Ubuntu 12.04 - 32 bit - minimal
 
 RAM: 1G
 
-HDD: 8G
+HDD: 6G
 
 
 Table of Contents
