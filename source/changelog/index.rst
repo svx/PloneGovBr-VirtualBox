@@ -6,6 +6,12 @@ Overview about latest changes
 
 .. contents:: :local:
 
+Changelog-20-06-2013
+--------------------
+
+- fix nginx vhost config -> see nginx section of documentation
+
+
 Changelog-16-06-2013
 ---------------------
 

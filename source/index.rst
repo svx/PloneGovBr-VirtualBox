@@ -27,6 +27,7 @@ Table of Contents
     plone/index
     usage_virtualbox/index
     deploy/index
+    nginx/index
     todo/index
 
 Indices and tables
