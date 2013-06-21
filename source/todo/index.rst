@@ -10,4 +10,4 @@ Todo
 - wirte a deploy script to cleanup image
 - cleanup logs
 - change user to ploneuser
-
+- if we use dd for writing zeros we can remove zeroinstall
