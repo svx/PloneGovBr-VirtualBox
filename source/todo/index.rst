@@ -8,5 +8,6 @@ Todo
 - speedup loadtime/start -> make it faster
 - update buildout with latest changes
 - wirte a deploy script to cleanup image
+- cleanup logs
 
 
