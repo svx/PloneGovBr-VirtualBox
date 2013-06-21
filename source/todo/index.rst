@@ -9,5 +9,5 @@ Todo
 - update buildout with latest changes
 - wirte a deploy script to cleanup image
 - cleanup logs
-
+- change user to ploneuser
 
