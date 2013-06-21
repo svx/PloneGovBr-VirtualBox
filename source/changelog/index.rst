@@ -6,6 +6,12 @@ Overview about latest changes
 
 .. contents:: :local:
 
+Changelog-21-06-2013
+--------------------
+
+- installed zerofree
+
+
 Changelog-20-06-2013
 --------------------
 
