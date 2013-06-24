@@ -18,10 +18,24 @@ To clean and shrink we will do a bit of housekeeping::
     rm -f /var/lib/apt/lists/*_Packages
     rm -f /etc/ssh/ssh_host_*
 
-run above as root or with sudo
+Run above as root or with sudo.
 
-ToDo:
------
+Empty all the logs in a directory::
 
-- clear $USER history
-- clear logfiles
+    for i in /var/log/*; do cat /dev/null > $i; done
+
+As normal user, clean history::
+
+    history -c
+
+
+Shrink the image
+----------------
+
+Try filling the unused space with zeros to make for better compression. The
+catch here is that if your VM has a big disk, this could take a while. Also,
+you'll want to do this right before you package it up for distribution.::
+
+    cat /dev/zero > zero.fill;sync;sleep 1;sync;rm -f zero.fill
+
+
