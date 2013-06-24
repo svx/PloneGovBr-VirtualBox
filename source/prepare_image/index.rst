@@ -27,8 +27,12 @@ Empty all the logs in a directory::
 As normal user, clean history and ssh::
 
     rm -rf ~/.bash_history
-    rm -rf ~/.ssh/*
 
+Further we need to delete the ssh folder of the user, this we will do at the
+end::
+
+    ssh -t $USER@$IP 'rm -rf ~/.ssh/*'
+    
 
 Shrink the image
 ----------------
