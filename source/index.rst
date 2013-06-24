@@ -28,6 +28,7 @@ Table of Contents
     usage_virtualbox/index
     deploy/index
     nginx/index
+    prepare_image/index
     todo/index
 
 Indices and tables
