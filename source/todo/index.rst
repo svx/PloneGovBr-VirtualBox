@@ -11,3 +11,4 @@ Todo
 - cleanup logs
 - change user to ploneuser
 - if we use dd for writing zeros we can remove zerofree
+- add #GETIP to message of the day
