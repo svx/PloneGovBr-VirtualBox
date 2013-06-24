@@ -24,9 +24,10 @@ Empty all the logs in a directory::
 
     for i in /var/log/*; do cat /dev/null > $i; done
 
-As normal user, clean history::
+As normal user, clean history and ssh::
 
-    history -c
+    rm -rf ~/.bash_history
+    rm -rf ~/.ssh/*
 
 
 Shrink the image
