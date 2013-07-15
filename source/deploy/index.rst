@@ -4,25 +4,32 @@ Deploy Image
 
 .. contents:: :local:
 
-Prepare
---------
+Depoyment
+---------
 
-In order to depoly an new build we have to prepare some things first to make sure that the image is clean.
+After you followed all steps on :doc:`../prepare_image/index` you are now ready to deploy a new build.
 
-Clean ssh::
+* Shut down the VM
 
-    sudo rm -f /etc/ssh/*host*key*
+Clone the VMDK
+--------------
 
-Networking::
+VirtualBox only lets you compact VDIs, but if we clone a VMDK we get a compressed copy. So find your disk image::
 
-    sudo rm -f /etc/udev/rules.d/70-persistent-net.rules
+    cd $VirtualBox_VMs_dir/$vm_dir
 
-Clean apt::
+If you don’t have any snapshots, just::
 
-    apt-get autoclean
-    apt-get clean
+    VBoxManage clonehd $disk_name.vmdk clone.vmdk
 
-History::
+Otherwise, find the snapshot you want. I just want the newest one, so I::
 
-    sudo history -c
-    rm -rf /home/zopeuser/.bash_history
+    ls -lt Snapshots
+
+And I get something like this at the top (newest file is on top)::
+
+    -rw------- 1 force force 721092608 Jul 12 10:13 {11f18f3d-9a0b-4e98-b680-a108ac31a0aa}.vmdk
+
+The 11f18f3d... is the UUID. So I want to use that to clone the disk.::
+
+    VBoxManage clonehd 11f18f3d-9a0b-4e98-b680-a108ac31a0aa clone.vmdk
