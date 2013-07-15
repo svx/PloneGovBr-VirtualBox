@@ -2,7 +2,7 @@
 Preparations
 ============
 
-In order to make a new release you will to prepare the image first.
+In order to make a new release you will have to prepare the image first.
 
 .. contents:: :local:
 
@@ -32,7 +32,7 @@ Further we need to delete the ssh folder of the user, this we will do at the
 end::
 
     ssh -t $USER@$IP 'rm -rf ~/.ssh/*'
-    
+
 
 Shrink the image
 ----------------
