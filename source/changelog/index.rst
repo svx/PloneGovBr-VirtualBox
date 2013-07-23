@@ -6,6 +6,17 @@ Overview about latest changes
 
 .. contents:: :local:
 
+Changelog-23-07-2013
+--------------------
+
+Image: plonegovbr_22july2013
+
+- update system packages
+- new buildout
+- update :doc:`../todo/index` todo list
+
+
+
 Changelog-21-06-2013
 --------------------
 

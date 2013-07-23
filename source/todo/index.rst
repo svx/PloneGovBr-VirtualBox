@@ -6,9 +6,14 @@ Todo
 
 - reduce size of image, we have to make this image a bit smaller
 - speedup loadtime/start -> make it faster
-- update buildout with latest changes
 - wirte a deploy script to cleanup image
 - cleanup logs
 - change user to ploneuser
-- if we use dd for writing zeros we can remove zerofree
 - add #GETIP to message of the day
+- create repo with all extra scripts and configs [start_all.sh for example]
+- change to cloud image
+- setup image buildserver with weekly builds
+- create own image buildout, based on staging
+- add @reboot [user cron] to buildout
+- add logrotate ?
+- make nginx faster and change config and cache
