@@ -17,3 +17,4 @@ Todo
 - add @reboot [user cron] to buildout
 - add logrotate ?
 - make nginx faster and change config and cache
+- better name for images:  identidade-ubuntu-1.0a1.ova
