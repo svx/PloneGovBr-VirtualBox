@@ -8,7 +8,7 @@ Todo
 - speedup loadtime/start -> make it faster
 - wirte a deploy script to cleanup image
 - cleanup logs
-- change user to ploneuser
+- change user to plonegovbr
 - add #GETIP to message of the day
 - create repo with all extra scripts and configs [start_all.sh for example]
 - change to cloud image
