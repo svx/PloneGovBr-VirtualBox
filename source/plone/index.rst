@@ -28,7 +28,7 @@ needed dependencies.
 Install
 -------
 
-Make sure to be in */home/zopeuser* !
+Make sure to be in */home/plonegovbr* !
 
 Checkout buildout from Github::
 
@@ -37,6 +37,10 @@ Checkout buildout from Github::
 Create virtualenv, to use its own Python::
 
     virtualenv --python=python2.7 --no-site-packages PloneGovBr
+
+Create the folder *downloads*::
+
+    mkdir downloads
 
 Create buildout.cfg::
 
