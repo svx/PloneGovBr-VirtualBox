@@ -16,3 +16,4 @@ Todo
 - add @reboot [user cron] to buildout
 - add logrotate ?
 - make nginx faster and change config and cache
+- load and speed test for changed nginx settings
