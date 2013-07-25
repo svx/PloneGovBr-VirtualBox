@@ -6,6 +6,34 @@ Overview about latest changes
 
 .. contents:: :local:
 
+
+Changelog-25-07-2013
+--------------------
+
+Image: identidade-ubuntu-1.2a.ova
+
+- update buildout with latest changes
+- change nginx.conf::
+
+    ...
+    worker_processes 8;
+    ...
+    worker_connections 1024;
+    use epoll;
+    multi_accept on;
+    ...
+    types_hash_max_size 2048;
+    ...
+
+- add to nginx.conf::
+
+    client_max_body_size 50M;
+    reset_timedout_connection on;
+    client_body_timeout 10;
+    send_timeout 2;
+
+- enable gzip cache in nginx.conf
+
 Changelog-24-07-2013
 --------------------
 
